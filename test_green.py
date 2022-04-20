@@ -22,6 +22,7 @@ class TestCase(Baseclass):
                 log.info(dataload["b"])
                 cart.screenshot("cart.png")
                 break
+        #comment
         self.driver.find_element_by_css_selector("[class ='cart-icon']").click()
         self.driver.find_element_by_xpath("//button[text()='PROCEED TO CHECKOUT']").click()
         amounts=self.driver.find_elements_by_xpath("//tr/td[5]/p")
